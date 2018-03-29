@@ -12,9 +12,13 @@
 		7F643FB4206CE21E00D1721B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F643FB2206CE21E00D1721B /* Main.storyboard */; };
 		7F643FB6206CE21E00D1721B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F643FB5206CE21E00D1721B /* Assets.xcassets */; };
 		7F643FB9206CE21E00D1721B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F643FB7206CE21E00D1721B /* LaunchScreen.storyboard */; };
+		C900B7B8DAFBA87B3FCAFA3A /* Pods_VideoPhotoCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 356F57048CEE0D919A7CB903 /* Pods_VideoPhotoCamera.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		356F57048CEE0D919A7CB903 /* Pods_VideoPhotoCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoPhotoCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E2CDC4A428369267769E3B /* Pods-VideoPhotoCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPhotoCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoPhotoCamera/Pods-VideoPhotoCamera.release.xcconfig"; sourceTree = "<group>"; };
+		7639AAD57D0E7551DEA6615D /* Pods-VideoPhotoCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoPhotoCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoPhotoCamera/Pods-VideoPhotoCamera.debug.xcconfig"; sourceTree = "<group>"; };
 		7F643FAB206CE21E00D1721B /* VideoPhotoCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoPhotoCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F643FAE206CE21E00D1721B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F643FB0206CE21E00D1721B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		7F643FB5206CE21E00D1721B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F643FB8206CE21E00D1721B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F643FBA206CE21E00D1721B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FF2C7C0206D2AF3008C8EF4 /* YouTubePlayer_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YouTubePlayer_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF2C7C2206D2BCC008C8EF4 /* YouTubePlayer_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YouTubePlayer_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C900B7B8DAFBA87B3FCAFA3A /* Pods_VideoPhotoCamera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D93ED0BCFF9D8A0099786B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7639AAD57D0E7551DEA6615D /* Pods-VideoPhotoCamera.debug.xcconfig */,
+				40E2CDC4A428369267769E3B /* Pods-VideoPhotoCamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7F643FA2206CE21E00D1721B = {
 			isa = PBXGroup;
 			children = (
 				7F643FAD206CE21E00D1721B /* VideoPhotoCamera */,
 				7F643FAC206CE21E00D1721B /* Products */,
+				5D93ED0BCFF9D8A0099786B6 /* Pods */,
+				8AAC93E49EEB59794A538FE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +82,16 @@
 			path = VideoPhotoCamera;
 			sourceTree = "<group>";
 		};
+		8AAC93E49EEB59794A538FE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF2C7C2206D2BCC008C8EF4 /* YouTubePlayer_Swift.framework */,
+				7FF2C7C0206D2AF3008C8EF4 /* YouTubePlayer_Swift.framework */,
+				356F57048CEE0D919A7CB903 /* Pods_VideoPhotoCamera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F643FBD206CE21E00D1721B /* Build configuration list for PBXNativeTarget "VideoPhotoCamera" */;
 			buildPhases = (
+				51AC2AD69D6029EA5E57A45B /* [CP] Check Pods Manifest.lock */,
 				7F643FA7206CE21E00D1721B /* Sources */,
 				7F643FA8206CE21E00D1721B /* Frameworks */,
 				7F643FA9206CE21E00D1721B /* Resources */,
+				391C4AA2DC51856ED992C70B /* [CP] Embed Pods Frameworks */,
+				103F6CB5FFC80401D20FDF90 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +161,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		103F6CB5FFC80401D20FDF90 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoPhotoCamera/Pods-VideoPhotoCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		391C4AA2DC51856ED992C70B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VideoPhotoCamera/Pods-VideoPhotoCamera-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoPhotoCamera/Pods-VideoPhotoCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51AC2AD69D6029EA5E57A45B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoPhotoCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F643FA7206CE21E00D1721B /* Sources */ = {
@@ -272,6 +357,7 @@
 		};
 		7F643FBE206CE21E00D1721B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7639AAD57D0E7551DEA6615D /* Pods-VideoPhotoCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +373,7 @@
 		};
 		7F643FBF206CE21E00D1721B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40E2CDC4A428369267769E3B /* Pods-VideoPhotoCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

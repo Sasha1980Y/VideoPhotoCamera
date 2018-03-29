@@ -10,6 +10,8 @@ import UIKit
 import AVFoundation
 import AVKit
 
+import YouTubePlayer
+
 class ViewController: UIViewController {
     
     
@@ -17,22 +19,15 @@ class ViewController: UIViewController {
     var playerView = AVPlayer()
     var playerController = AVPlayerViewController()
     
+    
+    //
+    
+    
+    @IBOutlet weak var videoView: YouTubePlayerView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //playVideo()
-        
-        
-        /*
-        guard let url = URL(string: "https://www.youtube.com/watch?v=_qCrK6ppQZ4") else {
-            return
-        }
-        let player = AVPlayer(url: url)
-        let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.frame = self.view.bounds
-        viewForPlayer.layer.addSublayer(playerLayer)
-        player.play()
-        */
         
         
     }
@@ -78,6 +73,21 @@ class ViewController: UIViewController {
         
         //player.play()
     }
+    
+    @IBAction func fromYouTube(_ sender: Any) {
+        
+        // https://youtu.be/NpG8iaM0Sfs
+        //https://youtu.be/B2T2wDLRaNY
+        let url = URL(string: "https://youtu.be/B2T2wDLRaNY")
+        
+        //viewVideo.loadVideoID("NpG8iaM0Sfs")
+        videoView.loadVideoURL(url!)
+        
+        
+        
+    }
+    
+    
     
 
 
